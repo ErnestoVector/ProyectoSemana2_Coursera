@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="ml.ernestovector.proyectosemana2_coursera.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margen_lateral"
+        android:layout_marginRight="@dimen/margen_lateral"
+        android:layout_marginTop="@dimen/margen_superior">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/LayoutNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_completo" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvFechaNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_nacimiento"
+            android:layout_below="@+id/LayoutNombre"
+            android:layout_alignRight="@+id/dpFechaNacimiento"
+            android:layout_alignEnd="@+id/dpFechaNacimiento"
+            android:layout_marginTop="@dimen/margen_superior2"
+            android:textSize="@dimen/fecha_nacimiento"/>
+
+
+        <DatePicker
+            android:id="@+id/dpFechaNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFechaNacimiento"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_centerHorizontal="true"
+            android:startYear="1940" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/LayoutTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dpFechaNacimiento">
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/telefono"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+        android:id="@+id/LayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LayoutTelefono">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/LayoutDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutEmail">
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripcion"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MiBotonRaised"
+                android:text="@string/bot_siguiente"
+                android:layout_below="@id/LayoutDescripcion"
+                android:layout_marginTop="@dimen/margen_boton"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

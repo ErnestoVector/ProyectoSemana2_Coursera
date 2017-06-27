@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_lateral">5dp</dimen>
+    <dimen name="margen_superior">10dp</dimen>
+    <dimen name="margen_superior2">15dp</dimen>
+    <dimen name="margen_datos">20dp</dimen>
+    <dimen name="margen_boton">40dp</dimen>
+    <dimen name="fecha_nacimiento">18sp</dimen>
+    <dimen name="texto_nombre">25sp</dimen>
+    <dimen name="texto_datos">18sp</dimen>
+</resources>
