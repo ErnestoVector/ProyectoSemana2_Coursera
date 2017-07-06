@@ -9,7 +9,7 @@
     <string name="bot_atras">Editar Datos</string>
     <string name="confirmar_datos">Confirmar Datos</string>
     <string name="nombre_muestra">Carlos Guerrero</string>
-    <string name="fecha_muestra">Fecha de Nacimiento: 25/Nov/1995</string>
+    <string name="fecha_muestra">25/Nov/1995</string>
     <string name="telefono_muestra">Tel: 55 3333 2222</string>
     <string name="email_muestra">E-mail: carlitos223@gmail.com</string>
     <string name="descripcion_muestra">Descripción: Lo conocí en la Facultad de Ingeniería UNAM</string>

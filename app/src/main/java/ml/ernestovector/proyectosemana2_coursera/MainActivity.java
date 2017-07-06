@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 //Se crean los objetos de tipo EditText para poder utilizarlo en el Layout
     private EditText etNombre;
-    //private DatePicker dpFechaNacimiento;
+    private DatePicker dpFechaNacimiento;
     private EditText etTelefono;
     private EditText etEmail;
     private EditText etDescripcion;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Establecemos la referencia a los EditText del Layout
         etNombre = (EditText) findViewById(R.id.etNombre);
-        //dpFechaNacimiento = (DatePicker) findViewById(R.id.dpFechaNacimiento);
+        dpFechaNacimiento = (DatePicker) findViewById(R.id.dpFechaNacimiento);
         etTelefono = (EditText) findViewById(R.id.etTelefono);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etDescripcion = (EditText) findViewById(R.id.etDescripcion);
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                 b.putString("Nombre", etNombre.getText().toString());
                 b.putString("Telefono", etTelefono.getText().toString());
+                b.putString("FechaNacimiento", dpFechaNacimiento.getResources().getText(R.string.fecha_muestra).toString());
                 b.putString("Email", etEmail.getText().toString());
                 b.putString("Descripcion", etDescripcion.getText().toString());
 
